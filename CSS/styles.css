@@ -66,6 +66,7 @@ body {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 24px 0;
@@ -81,7 +82,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -92,27 +92,27 @@ body {
   color: var(--accent-color);
 }
 
-.contacts {
-  display: none;
+.js-open-menu {
+  display: inline-block;
+  width: 32px;
+  height: auto;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
+.js-menu-container .is-open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--main-cubic), opacity 250ms var(--main-cubic); */
+
   width: 100%;
   height: 100%;
+  background-color: var(--primary-background-color);
 
-  background-color: rgba(46, 47, 66, 0.4);
-  opacity: 1;
-  transition: opacity 250ms var(--main-cubic),
-    visibility 250ms var(--main-cubic);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.contacts {
+  display: none;
 }
 
 .header {
@@ -452,9 +452,9 @@ body {
   gap: 72px;
 }
 
-.advantages-list-item {
+/* .advantages-list-item {
   gap: 72px;
-}
+} */
 
 .section.doing {
   display: none;
@@ -560,7 +560,7 @@ body {
 }
 
 .customers-link {
-  width: 190px;
+  width: 168px;
   height: 88px;
   display: flex;
   justify-content: center;
