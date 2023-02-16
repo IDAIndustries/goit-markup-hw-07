@@ -54,9 +54,10 @@ body {
 }
 
 .container {
-  /* width: 100%; */
+  width: 396px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
-  padding: 0 16px;
 }
 
 .header .container {
@@ -108,7 +109,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--primary-background-color);
-
 }
 
 .contacts {
@@ -465,10 +465,6 @@ body {
 .section.team {
   padding-top: 96px;
   padding-bottom: 128px;
-}
-
-.section.team > .container {
-  padding: 0 82px;
 }
 
 .team .section-title {

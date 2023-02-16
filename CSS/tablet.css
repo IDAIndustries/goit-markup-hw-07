@@ -81,6 +81,14 @@
     color: var(--active-links-color);
   }
 
+  .js-open-menu {
+    display: none;
+  }
+
+  .js-menu-container {
+    display: none;
+  }
+
   .contacts {
     display: block;
     font-size: 12px;
@@ -120,10 +128,6 @@
     padding-bottom: 104px;
   }
 
-  .section.team > .container {
-    padding: 0 108px;
-  }
-
   .team-members {
     flex-direction: row;
     flex-wrap: wrap;
@@ -136,10 +140,6 @@
 
   .team-social-list {
     padding: 0 16px 32px 16px;
-  }
-
-  .section.customers > .container {
-    padding: 0 108px;
   }
 
   .customers-list {
