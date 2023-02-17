@@ -452,10 +452,6 @@ body {
   gap: 72px;
 }
 
-/* .advantages-list-item {
-  gap: 72px;
-} */
-
 .section.doing {
   display: none;
 }
@@ -668,7 +664,7 @@ body {
 
 .footer-input {
   display: block;
-  width: 396px;
+  width: 300px;
   height: 40px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -735,6 +731,9 @@ body {
   .container {
     width: 428px;
   }
+
+  .footer-input {
+    width: 396px;
 }
 /* PORTFOLIO MAIN */
 /* Цвет кнопок в спокойном состоянии #F4F4FD  */
