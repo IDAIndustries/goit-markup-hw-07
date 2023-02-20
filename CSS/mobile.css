@@ -11,6 +11,12 @@
       url(../images/bgtab-1x.jpg);
   }
 
+  .modal {
+    width: 408px;
+    height: auto;
+    overflow-y: none;
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

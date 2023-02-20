@@ -258,6 +258,15 @@
     padding: 0 15px;
     width: 1158px;
   }
+  .footer-btn:hover,
+  .footer-btn:focus {
+    background-color: var(--active-links-color);
+  }
+
+  .footer-social-link:hover,
+  .footer-social-link:focus {
+    background-color: #31d0aa;
+  }
 
   .footer-text {
     margin: 16px 0 0 0;
