@@ -15,19 +15,20 @@
     padding: 0 16px;
   }
 
+  .menu-toggle {
+    display: none;
+  }
+
   .header .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 0;
   }
 
   .nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px 0;
   }
 
   .nav-list {
@@ -41,6 +42,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-text-color);
+    padding: 24px 0;
   }
 
   .nav .logo {
@@ -48,12 +50,12 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
     text-decoration: none;
     margin-right: 120px;
+    padding: 24px 0;
   }
 
   .logo-letters {
@@ -69,7 +71,7 @@
     display: block;
     position: absolute;
     left: 0;
-    bottom: -25px;
+    bottom: -1px;
 
     width: 100%;
     height: 4px;
@@ -79,6 +81,26 @@
 
   .nav-link.current {
     color: var(--active-links-color);
+  }
+
+  .section.hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section.hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herobg-2x.jpg);
+    }
   }
 
   .js-open-menu {
@@ -91,11 +113,18 @@
 
   .contacts {
     display: block;
+    margin-left: auto;
+  }
+
+  .contact-link {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--primary-text-color);
-    margin-left: auto;
+  }
+
+  .contact-link:focus {
+    color: var(--active-links-color);
   }
 
   .hero-title {
@@ -128,6 +157,10 @@
     padding-bottom: 104px;
   }
 
+  .team .container {
+    width: 552px;
+  }
+
   .team-members {
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,11 +168,11 @@
   }
 
   .team-list {
-    flex-basis: calc((100% - 230px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
-  .team-social-list {
-    padding: 0 16px 32px 16px;
+  .customers .container {
+    width: 552px;
   }
 
   .customers-list {
@@ -147,14 +180,15 @@
   }
 
   .customers-item {
-    flex-basis: calc((100% - 264px) / 3);
+    width: calc((100% - 48px) / 3);
   }
 
   .footer > .container {
-    padding: 0 108px;
+    width: 552px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 72px 24px;
   }
 
   .footer div {
