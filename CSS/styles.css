@@ -65,6 +65,7 @@ body {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -261,7 +262,7 @@ body {
 }
 
 .hero-title {
-  margin: 0px 56px 72px 54px;
+  margin: 0px 30px 72px 30px;
 
   font-weight: 700;
   font-size: 36px;
