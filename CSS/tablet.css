@@ -209,4 +209,23 @@
     width: 264px;
     margin: 0;
   }
+
+  /* Portfolio */
+
+  .button {
+    padding: 12px 24px;
+  }
+
+  .button-list {
+    justify-content: center;
+  }
+
+  .sample-list {
+    gap: 72px 24px;
+    justify-content: space-between;
+  }
+
+  .sample-item {
+    flex-basis: calc((100% - 56px) / 2);
+  }
 }
